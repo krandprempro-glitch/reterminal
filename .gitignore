@@ -1,0 +1,19 @@
+# Build files
+build/
+.gradle/
+*.iml
+local.properties
+out/
+
+# OS files
+.DS_Store
+*.log
+
+# IDE files
+.idea/
+*.swp
+*~
+
+# Temp files
+*.tmp
+.cache/
