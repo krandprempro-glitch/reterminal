@@ -28,8 +28,14 @@ jobs:
     - name: Build APK
       run: ./gradlew assembleDebug --no-daemon
     
-    - name: Upload APK
+    - name: Upload APK (Fdroid)
       uses: actions/upload-artifact@v4
       with:
-        name: reterminal-apk
-        path: app/build/outputs/apk/debug/*.apk
+        name: reterminal-fdroid-apk
+        path: app/build/outputs/apk/fdroid/debug/*.apk
+    
+    - name: Upload APK (PlayStore)
+      uses: actions/upload-artifact@v4
+      with:
+        name: reterminal-playstore-apk
+        path: app/build/outputs/apk/playStore/debug/*.apk
